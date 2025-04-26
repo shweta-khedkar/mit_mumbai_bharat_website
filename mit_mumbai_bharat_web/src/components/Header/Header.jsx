@@ -14,7 +14,7 @@ const Header = () => {
               src={logo} 
               alt="College Logo" 
               className="logo-custom"
-              style={{ height: '100px', width: 'auto' }}
+              style={{ height: '130px', width: 'auto' }}
             />
           </div>
 

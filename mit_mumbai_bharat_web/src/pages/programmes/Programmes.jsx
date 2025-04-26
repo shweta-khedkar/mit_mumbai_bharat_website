@@ -7,21 +7,21 @@ import compscience from "../../assets/comp_science.jpg";
 
 const Programmes = () => {
 
-  useEffect(() => {
-    // Load Header
-    fetch('../../Includes/header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
+  // useEffect(() => {
+  //   // Load Header
+  //   fetch('../../Includes/header.html')
+  //     .then(response => response.text())
+  //     .then(data => {
+  //       document.getElementById('header-placeholder').innerHTML = data;
+  //     });
 
-    // Load Footer
-    fetch('../../Includes/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-  }, []);
+  //   // Load Footer
+  //   fetch('../../Includes/footer.html')
+  //     .then(response => response.text())
+  //     .then(data => {
+  //       document.getElementById('footer-placeholder').innerHTML = data;
+  //     });
+  // }, []);
 
   return (
     <div className="programmes-page">

@@ -36,7 +36,7 @@ const Header = () => {
             {/* Bottom Menu */}
             <nav>
               <ul className="nav justify-content-center mt-1">
-                {['IT @ MIT', 'Placements', 'Faculty', 'Careers', 'Life @ MIT', 'Mumbai', 'News & Events'].map((item, index) => (
+                {['IT @ MIT', 'Placements', 'Faculty', 'Careers', 'Life @ MIT Mumbai', 'News & Events'].map((item, index) => (
                   <li className="nav-item" key={index}>
                     <a className="nav-link  fw-bold nav-link-custom" href="#">
                       {item}

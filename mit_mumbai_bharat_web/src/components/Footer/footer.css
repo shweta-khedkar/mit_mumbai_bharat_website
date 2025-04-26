@@ -1,0 +1,15 @@
+.footer-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #ffcc00; /* Goldish color on hover, you can change */
+    transform: scale(1.5);
+  }
+  .btn-download:hover{
+    color: #ffcc00; /* Goldish color on hover, you can change */
+    transform: scale(1.5);
+  }

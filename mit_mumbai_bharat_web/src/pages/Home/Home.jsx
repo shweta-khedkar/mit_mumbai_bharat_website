@@ -19,7 +19,7 @@ const Home = () => {
             
             {/* Left Side - Welcome Text */}
             <div className="col-md-6 mb-4 mb-md-0 welcome-text">
-              <h2 className="mb-3 text-white welcome-text">Welcome to MAEER'S MIT MUMBAI</h2>
+              <h2 className="mb-3 text-white ">Welcome to MAEER'S MIT MUMBAI</h2>
               <p className="text-white">
                 With over 40 years of academic excellence and a global alumni network exceeding 100,000, MIT is a premier engineering institute approved by AICTE and affiliated with top Indian universities.
               </p>

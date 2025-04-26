@@ -9,7 +9,9 @@
     color: #ffcc00; /* Goldish color on hover, you can change */
     transform: scale(1.5);
   }
+  
   .btn-download:hover{
-    color: #ffcc00; /* Goldish color on hover, you can change */
-    transform: scale(1.5);
+    background-color: #ffcc00;
+    color: #141312; /* Goldish color on hover, you can change */
+    transform: scale(1.2);
   }

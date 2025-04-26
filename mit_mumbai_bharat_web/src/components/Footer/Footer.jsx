@@ -52,8 +52,8 @@ const Footer = () => {
 
         {/* Brochure Button */}
         <div className="col-md-4 d-flex flex-column align-items-md-end">
-          <h5 className="text-white btn-download">Download</h5>
-          <a href="/path/to/brochure.pdf" download className="btn btn-light">
+          
+          <a href="/path/to/brochure.pdf" download className="btn btn-light btn-download">
             Download Brochure
           </a>
         </div>

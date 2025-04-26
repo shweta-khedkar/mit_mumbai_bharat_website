@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn,FaXTwitter  } from "react-icons/fa6";
 import './footer.css'; // Import custom CSS
-
+import broucher from '../../assets/broucher.pdf'
 const Footer = () => {
   return (
     <footer style={{ backgroundColor: '#000080' }} className="py-5 mt-auto">
@@ -53,7 +53,7 @@ const Footer = () => {
         {/* Brochure Button */}
         <div className="col-md-4 d-flex flex-column align-items-md-end">
           
-          <a href="/path/to/brochure.pdf" download className="btn btn-light btn-download">
+          <a href={broucher} download className="btn btn-light btn-download">
             Download Brochure
           </a>
         </div>

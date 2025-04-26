@@ -39,22 +39,22 @@ const Home = () => {
                   <form action="mail.php" method="POST">
                     
                     <div className="mb-3">
-                      <label htmlFor="name" className="form-label text-white">Full Name</label>
+                      <label htmlFor="name" className="form-label text-white1">Full Name</label>
                       <input type="text" className="form-control" id="name" name="name" required />
                     </div>
 
                     <div className="mb-3">
-                      <label htmlFor="email" className="form-label text-white">Email Address</label>
+                      <label htmlFor="email" className="form-label text-white1">Email Address</label>
                       <input type="email" className="form-control" id="email" name="email" required />
                     </div>
 
                     <div className="mb-3">
-                      <label htmlFor="phone" className="form-label text-white">Mobile Number</label>
+                      <label htmlFor="phone" className="form-label text-white1">Mobile Number</label>
                       <input type="tel" className="form-control" id="phone" name="phone" required />
                     </div>
 
                     <div className="mb-3">
-                      <label htmlFor="course" className="form-label text-white">Interested Course</label>
+                      <label htmlFor="course" className="form-label text-white1">Interested Course</label>
                       <select className="form-select" id="course" name="course" required>
                         <option value="">Select a course</option>
                         <option value="Computer Science and Engineering - AI & ML">Computer Science and Engineering - AI & ML</option>
@@ -65,7 +65,7 @@ const Home = () => {
                     </div>
 
                     <div className="mb-3">
-                      <label htmlFor="message" className="form-label text-white">Message</label>
+                      <label htmlFor="message" className="form-label text-white1">Message</label>
                       <textarea className="form-control" id="message" name="message" rows="3"></textarea>
                     </div>
 

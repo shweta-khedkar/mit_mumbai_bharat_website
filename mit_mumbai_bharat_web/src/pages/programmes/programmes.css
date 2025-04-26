@@ -1,13 +1,11 @@
 /* Programmes Page Styles */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-  }
+
   
   .programmes-page {
-    padding-top: 120px;
-    background-color: #f8f9fa;
+    padding-top: 90px;
+    background-color: #ced4e9;
+    margin-bottom: 80px;
   }
   
   .navbar {
@@ -26,7 +24,7 @@ body {
   .programme-list {
     max-width: 1000px;
     margin: auto;
-    margin-top: 30px;
+   
     text-align: center;
   }
   
@@ -40,7 +38,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   
   .card {

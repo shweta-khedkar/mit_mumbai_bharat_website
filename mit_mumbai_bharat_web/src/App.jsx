@@ -14,8 +14,9 @@ function App() {
     <>
     <Header/>
       <Home/>
-      <Footer/>
       <Programmes/>
+      <Footer/>
+      
     </>
   )
 }

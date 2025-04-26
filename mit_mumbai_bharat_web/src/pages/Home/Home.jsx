@@ -1,11 +1,11 @@
 import React from 'react';
 import './home.css';
-
+import CampusTour from '../../assets/mit_video_landingpage.mp4';
 const Home = () => {
   return (
 
 
-
+<div>
 
 <div className="home-page">
       {/* Background and overlay */}
@@ -77,7 +77,20 @@ const Home = () => {
 
           </div>
         </div>
+        
       </main>
+      </div>
+      <section className="video-section">
+  <div className="container">
+    <h3 className="text-center mb-5">Discover Our Campus</h3>
+    <div className="video-wrapper">
+      <video controls autoPlay loop muted playsInline>
+        <source src={CampusTour} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
     </div>
   )
 }

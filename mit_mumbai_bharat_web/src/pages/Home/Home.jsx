@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './home.css';
 import CampusTour from '../../assets/mit_video_landingpage.mp4';
+import emailjs from 'emailjs-com';
+
 const Home = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_f9m3lwq',     // 🔁 Replace with your EmailJS Service ID
+        'template_x7725jm',    // 🔁 Replace with your EmailJS Template ID
+        form.current,
+        'tTYTcXGIhVuzVeOkp'      // 🔁 Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          alert('✅ Enquiry submitted successfully!');
+          form.current.reset();
+        },
+        (error) => {
+          alert('❌ Something went wrong. Please try again.');
+          console.log(error.text);
+        }
+      );
+  };
   return (
 
 
@@ -36,7 +61,7 @@ const Home = () => {
               <div className="enquiry-wrapper">
                 <div className="card1 shadow p-4">
                   <h4 className="mb-3 text-white">Enquiry Form</h4>
-                  <form action="mail.php" method="POST">
+                  <form ref={form} onSubmit={sendEmail}>
                     
                     <div className="mb-3">
                       <label htmlFor="name" className="form-label text-white">Full Name</label>

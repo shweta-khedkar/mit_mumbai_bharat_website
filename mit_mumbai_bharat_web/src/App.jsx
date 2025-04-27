@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Courses from "./pages/Courses/Courses";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Admissions from "./pages/Admissions";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/programs" element={<Courses />} />
-
+        <Route path="/admissions" element={<Admissions />} />
         {/* Add other routes here */}
       </Routes>
 

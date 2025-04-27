@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home.jsx";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Courses from "./pages/Courses/Courses.jsx";
+import Courses from "./pages/courses/Courses.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Admissions from "./pages/Admissions.jsx";
 

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./home.css";
 import CampusTour from "../../assets/mit_video_landingpage.mp4";
 import emailjs from "emailjs-com";
-import Programmes from "../Programmes/Programmes";
+import Programmes from "../programmes/Programmes.jsx";
 
 const Home = () => {
   const form = useRef();

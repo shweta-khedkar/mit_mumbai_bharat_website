@@ -188,6 +188,50 @@ const Home = () => {
         </div>
       </section>
       <Programmes />
+      {/* Location Card */}
+      <section className="location-card">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=..."
+                width="100%"
+                height="300"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div className="col-md-6 address-container">
+              <h4 className="text-white">Contact Us</h4>
+              <p className="text-white">
+                Address: MAEER’s Maharashtra Institute of Technology, Near Green
+                Valley Studio, Mira Road, Mumbai, Maharashtra, 401107.
+              </p>
+              <p className="text-white">
+                Phone: +91 70666 70405 | +91 92265 63228
+              </p>
+              <p className="text-white">
+                Email:{" "}
+                <a href="mailto:admissions@mitmumbai.com">
+                  admissions@mitmumbai.com
+                </a>
+              </p>
+              <p className="text-white">
+                Website:{" "}
+                <a
+                  href="http://www.mitmumbai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  www.mitmumbai.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

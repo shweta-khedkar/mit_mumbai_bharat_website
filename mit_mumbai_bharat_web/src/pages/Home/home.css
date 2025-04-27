@@ -100,4 +100,26 @@ html, body, #root {
     border: 2px solid #003366;
     border-radius: 15px;
   }
-  
+  /* Location Card Styles */
+.location-card {
+  background-color: #8c909c;  /* Match video section background */
+  padding: 20px 0;
+  margin-top: px; /* To ensure it aligns with the section properly */
+}
+
+.location-card .map-container iframe {
+  border-radius: 10px;
+  width: 100%;
+  padding: px;
+}
+
+.location-card .address-container {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+}
+
+.location-card .address-container a {
+  color: #16202a;
+}

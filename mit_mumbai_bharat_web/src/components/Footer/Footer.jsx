@@ -16,8 +16,8 @@ const Footer = () => {
                 <li><a href="#home" className="footer-link">Home</a></li>
                 <li><a href="#about" className="footer-link">About Us</a></li>
                 <li><a href="#programs" className="footer-link">Programs</a></li>
-                <li><a href="#it" className="footer-link">IT @MIT</a></li>
-                <li><a href="#placements" className="footer-link">Placements</a></li>
+                {/* <li><a href="#it" className="footer-link">IT @MIT</a></li> */}
+                {/* <li><a href="#placements" className="footer-link">Placements</a></li> */}
               </ul>
             </div>
             <div className="col-6">
@@ -25,7 +25,7 @@ const Footer = () => {
                 <li><a href="#faculty" className="footer-link">Faculty</a></li>
                 <li><a href="#careers" className="footer-link">Careers</a></li>
                 <li><a href="#life" className="footer-link">Life @MIT Mumbai</a></li>
-                <li><a href="#news" className="footer-link">News and Events</a></li>
+                {/* <li><a href="#news" className="footer-link">News and Events</a></li> */}
               </ul>
             </div>
           </div>

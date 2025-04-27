@@ -4,9 +4,14 @@ import './header.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false); // for mobile submenu
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleAbout = () => {
+    setAboutOpen(!aboutOpen);
   };
 
   return (
@@ -14,7 +19,7 @@ const Header = () => {
       <div className="container-fluid py-2">
         <div className="d-flex align-items-center justify-content-between">
 
-          {/* Left: Logo (always visible) */}
+          {/* Left: Logo */}
           <div className="d-flex align-items-center">
             <img
               src={logo}
@@ -28,37 +33,45 @@ const Header = () => {
           <div className="flex-grow-1 mx-4 d-none d-md-block text-center">
             <nav>
               <ul className="nav justify-content-center mb-1">
-                {['Home', 'About Us', 'Admissions', 'Programs', 'Student Corner'].map((item, index) => (
+                <li className="nav-item">
+                  <a className="nav-link fw-bold nav-link-custom" href="#">Home</a>
+                </li>
+
+                {/* About Us with Dropdown */}
+                <li className="nav-item dropdown-custom">
+                  <a className="nav-link fw-bold nav-link-custom" href="#">About Us</a>
+                  <ul className="dropdown-menu-custom">
+                    <li><a href="#">Vision & Mission</a></li>
+                    <li><a href="#">Our Legacy</a></li>
+                    <li><a href="#">Leadership</a></li>
+                  </ul>
+                </li>
+
+                {['Admissions', 'Programs'].map((item, index) => (
                   <li className="nav-item" key={index}>
-                    <a className="nav-link fw-bold nav-link-custom" href="#">
-                      {item}
-                    </a>
+                    <a className="nav-link fw-bold nav-link-custom" href="#">{item}</a>
                   </li>
                 ))}
               </ul>
               <hr className="border-light my-1" />
               <ul className="nav justify-content-center mt-1">
-                {['IT @ MIT', 'Placements', 'Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'].map((item, index) => (
+                {[ 'Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'].map((item, index) => (
                   <li className="nav-item" key={index}>
-                    <a className="nav-link fw-bold nav-link-custom" href="#">
-                      {item}
-                    </a>
+                    <a className="nav-link fw-bold nav-link-custom" href="#">{item}</a>
                   </li>
                 ))}
               </ul>
             </nav>
           </div>
 
-          {/* Right: Hamburger (always for mobile) */}
+          {/* Right: Hamburger */}
           <div className="d-flex align-items-center">
-            {/* Apply Now button (desktop only) */}
             <div className="d-none d-md-block">
               <a href="#" className="btn btn-warning fw-bold px-4 py-2 apply-now-button">
                 Apply Now
               </a>
             </div>
 
-            {/* Hamburger for small screens */}
             <button className="hamburger d-md-none ms-3" onClick={toggleMenu}>
               <span className="hamburger-line"></span>
               <span className="hamburger-line"></span>
@@ -67,18 +80,29 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile menu (collapsible) */}
+        {/* Mobile menu */}
         {menuOpen && (
           <div className="mobile-menu mt-3 d-md-none text-center">
             <ul className="list-unstyled">
-              {[
-                'Home', 'About Us', 'Admissions', 'Programs', 'Student Corner',
-                'IT @ MIT', 'Placements', 'Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'
-              ].map((item, index) => (
+              <li className="my-2">
+                <a className="fw-bold text-white" href="#" onClick={() => setMenuOpen(false)}>Home</a>
+              </li>
+              {/* About Us in mobile */}
+              <li className="my-2">
+                <span className="fw-bold text-white" style={{ cursor: 'pointer' }} onClick={toggleAbout}>
+                  About Us {aboutOpen ? '▲' : '▼'}
+                </span>
+                {aboutOpen && (
+                  <ul className="list-unstyled mt-2">
+                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Vision & Mission</a></li>
+                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Our Legacy</a></li>
+                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Leadership</a></li>
+                  </ul>
+                )}
+              </li>
+              {['Admissions', 'Programs', 'Faculty', 'Careers', 'Life @MIT Mumbai'].map((item, index) => (
                 <li key={index} className="my-2">
-                  <a className="fw-bold text-white" href="#" onClick={() => setMenuOpen(false)}>
-                    {item}
-                  </a>
+                  <a className="fw-bold text-white" href="#" onClick={() => setMenuOpen(false)}>{item}</a>
                 </li>
               ))}
             </ul>

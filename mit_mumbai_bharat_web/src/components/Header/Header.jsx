@@ -38,12 +38,25 @@ const Header = () => {
                 </li>
 
                 {/* About Us with Dropdown */}
+                
                 <li className="nav-item dropdown-custom">
                   <a className="nav-link fw-bold nav-link-custom" href="#">About Us</a>
+                  
                   <ul className="dropdown-menu-custom">
-                    <li><a href="#">Vision & Mission</a></li>
-                    <li><a href="#">Our Legacy</a></li>
-                    <li><a href="#">Leadership</a></li>
+                    {['About MIT',
+'History & Legacy',
+'Founder',
+'Executive President',
+'Executive Director',
+'Leadership and Governance',
+'Ranking & Accreditation',
+'Social Initiatives',
+'National Ragging Prevention Programme',
+'Administrative Offices'].map((item,index)=>(
+<li key={index}><a href="#">{item}</a></li>
+                   
+))}
+                    
                   </ul>
                 </li>
 

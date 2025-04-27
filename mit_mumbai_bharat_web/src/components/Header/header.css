@@ -64,6 +64,7 @@
 /* Desktop Dropdown */
 .dropdown-custom {
   position: relative;
+  justify-items: start;
 }
 
 .dropdown-custom .dropdown-menu-custom {
@@ -80,17 +81,21 @@
 
 .dropdown-custom:hover .dropdown-menu-custom {
   display: block;
+  list-style: none;
+  background-color:  #f9c54c;
 }
 
 .dropdown-menu-custom li a {
+  text-align: start;
+  list-style: none;
   display: block;
   padding: 8px 16px;
-  color: #fff;
+  color: #150000;
   text-decoration: none;
 }
 
 .dropdown-menu-custom li a:hover {
-  background-color: #003080;
+  background-color:  #C02940;
 }
 
 /* Mobile Menu */

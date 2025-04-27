@@ -47,20 +47,20 @@ const Header = () => {
                   </ul>
                 </li>
 
-                {['Admissions', 'Programs'].map((item, index) => (
+                {['Admissions', 'Programs','Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'].map((item, index) => (
                   <li className="nav-item" key={index}>
                     <a className="nav-link fw-bold nav-link-custom" href="#">{item}</a>
                   </li>
                 ))}
               </ul>
-              <hr className="border-light my-1" />
+              {/* <hr className="border-light my-1" />
               <ul className="nav justify-content-center mt-1">
                 {[ 'Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'].map((item, index) => (
                   <li className="nav-item" key={index}>
                     <a className="nav-link fw-bold nav-link-custom" href="#">{item}</a>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </nav>
           </div>
 

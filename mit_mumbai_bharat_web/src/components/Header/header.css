@@ -6,6 +6,9 @@
   .nav-link-custom:hover {
     color: #ffc107; /* Yellow on hover */
     transform: scale(1.05);
+     text-decoration: underline;
+     text-decoration-thickness: 3px;
+     text-decoration-style: solid;
    
   }
   /* Logo */

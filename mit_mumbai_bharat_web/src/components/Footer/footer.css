@@ -7,6 +7,10 @@
   
   .footer-link:hover {
     color: #ffcc00; /* Goldish color on hover, you can change */
+   
+  }
+  .hover-effect:hover{
+    transition: all 0.3s ease;
     transform: scale(1.5);
   }
   .btn-download{
@@ -18,3 +22,35 @@
     color: #141312; /* Goldish color on hover, you can change */
     transform: scale(1.2);
   }
+  /* Dropdown for footer (opens upward) */
+.footer-dropdown-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  background-color: #000080;
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0;
+  z-index: 100;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 350px;
+}
+
+.footer-dropdown-menu li a {
+  display: block;
+  padding: 0.4rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-dropdown-menu li a:hover {
+  background-color: #001f7f;
+  transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
+/* Wrapper to position relative for dropdown */
+.footer-dropdown-wrapper {
+  position: relative;
+}

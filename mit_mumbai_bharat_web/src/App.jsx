@@ -3,7 +3,6 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Programmes from "./pages/Programmes/Programmes";
 import Courses from "./pages/Courses/Courses";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 

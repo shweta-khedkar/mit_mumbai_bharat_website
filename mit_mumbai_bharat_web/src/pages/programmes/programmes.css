@@ -2,90 +2,89 @@
 
 
   
-  .programmes-page {
-    padding-top: 90px;
-    background-color: #ced4e9;
-    margin-bottom: 80px;
+.programmes-page {
+  padding-top: 90px;
+  background-color: #ced4e9;
+  margin-bottom: 80px;
+}
+
+.navbar {
+  background: navy;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: orange;
+}
+
+.programme-list {
+  max-width: 1000px;
+  margin: auto;
+ 
+  text-align: center;
+}
+
+.programme-list h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.programme-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card{
+  flex: 0 0 calc(50% - 20px);
+  box-sizing: border-box;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  text-align: center;
+  background: white;
+  padding: 20px;
+}
+
+.btn-explore {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-explore:hover {
+  background: navy;
+  color: white;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 100%;
   }
-  
-  .navbar {
-    background: navy;
-  }
-  
-  .navbar-nav .nav-link {
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: orange;
-  }
-  
-  .programme-list {
-    max-width: 1000px;
-    margin: auto;
-   
-    text-align: center;
-  }
-  
-  .programme-list h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: bold;
-  }
-  
-  .programme-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  .card{
-    flex: 0 0 calc(50% - 20px);
-    box-sizing: border-box;
-    border: none;
-    transition: transform 0.3s ease-in-out;
-    background: white;
-    margin-bottom: 10px;
-  }
-  
-  .card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .card img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  .card-body {
-    text-align: center;
-    background: white;
-    padding: 20px;
-  }
-  
-  .btn-explore {
-    background: orange;
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .btn-explore:hover {
-    background: navy;
-    color: white;
-  }
-  
-  /* Responsive for Mobile */
-  @media (max-width: 768px) {
-    .card {
-      flex: 0 0 100%;
-    }
-  }
-  
+}

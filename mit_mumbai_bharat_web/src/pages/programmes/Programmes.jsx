@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './programmes.css';
 import aiml from "../../assets/ai_ml.jpg";
 import it from "../../assets/it.jpg";
@@ -6,6 +6,23 @@ import et from "../../assets/et.jpg";
 import compscience from "../../assets/comp_science.jpg";
 
 const Programmes = () => {
+
+  // useEffect(() => {
+  //   // Load Header
+  //   fetch('../../Includes/header.html')
+  //     .then(response => response.text())
+  //     .then(data => {
+  //       document.getElementById('header-placeholder').innerHTML = data;
+  //     });
+
+  //   // Load Footer
+  //   fetch('../../Includes/footer.html')
+  //     .then(response => response.text())
+  //     .then(data => {
+  //       document.getElementById('footer-placeholder').innerHTML = data;
+  //     });
+  // }, []);
+
   return (
     <div className="programmes-page">
 
@@ -16,54 +33,46 @@ const Programmes = () => {
       <div className="container programme-list">
         <h2>Our Undergraduate Programmes</h2>
 
-        {/* Table Layout */}
-        <div className="programme-table">
+        {/* Cards Wrapper */}
+        <div className="programme-cards">
 
-          {/* Row 1 */}
-          <div className="programme-row right-image">
-            <div className="programme-details">
-              <h5 className="programme-title">Computer Science & Engineering (Artificial Intelligence)</h5>
-              <p className="programme-description">Learn cutting-edge AI, ML, and automation techniques.</p>
+          {/* Programme 1 */}
+          <div className="card">
+            <img src={aiml} alt="CSE AI" />
+            <div className="card-body">
+              <h5 className="card-title">Computer Science & Engineering (Artificial Intelligence)</h5>
+              <p className="card-text">Learn cutting-edge AI, ML, and automation techniques.</p>
               <a href="#" className="btn btn-explore">Explore More</a>
-            </div>
-            <div className="programme-img">
-              <img src={aiml} alt="CSE AI" />
             </div>
           </div>
 
-          {/* Row 2 */}
-          <div className="programme-row left-image">
-            <div className="programme-details">
-              <h5 className="programme-title">Computer Science & Engineering (Data Science)</h5>
-              <p className="programme-description">Master big data analytics and predictive modeling.</p>
+          {/* Programme 2 */}
+          <div className="card">
+            <img src={compscience} alt="CSE DS" />
+            <div className="card-body">
+              <h5 className="card-title">Computer Science & Engineering (Data Science)</h5>
+              <p className="card-text">Master big data analytics and predictive modeling.</p>
               <a href="#" className="btn btn-explore">Explore More</a>
-            </div>
-            <div className="programme-img">
-              <img src={compscience} alt="CSE DS" />
             </div>
           </div>
 
-          {/* Row 3 */}
-          <div className="programme-row right-image">
-            <div className="programme-details">
-              <h5 className="programme-title">Electronics Engineering</h5>
-              <p className="programme-description">Design the future with embedded systems and IoT.</p>
+          {/* Programme 3 */}
+          <div className="card">
+            <img src={et} alt="Electronics Engineering" />
+            <div className="card-body">
+              <h5 className="card-title">Electronics Engineering</h5>
+              <p className="card-text">Design the future with embedded systems and IoT.</p>
               <a href="#" className="btn btn-explore">Explore More</a>
-            </div>
-            <div className="programme-img">
-              <img src={et} alt="Electronics Engineering" />
             </div>
           </div>
 
-          {/* Row 4 */}
-          <div className="programme-row left-image">
-            <div className="programme-details">
-              <h5 className="programme-title">Information Technology</h5>
-              <p className="programme-description">Develop full-stack applications and cloud solutions.</p>
+          {/* Programme 4 */}
+          <div className="card">
+            <img src={it} alt="Information Technology" />
+            <div className="card-body">
+              <h5 className="card-title">Information Technology</h5>
+              <p className="card-text">Develop full-stack applications and cloud solutions.</p>
               <a href="#" className="btn btn-explore">Explore More</a>
-            </div>
-            <div className="programme-img">
-              <img src={it} alt="Information Technology" />
             </div>
           </div>
 

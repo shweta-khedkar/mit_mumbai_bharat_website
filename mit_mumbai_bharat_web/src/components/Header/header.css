@@ -72,20 +72,24 @@
   position: absolute;
   top: 38px;
   left: 0;
+ 
   background-color: #001f5c;
   padding: 10px 0;
   border-radius: 0 0 8px 8px;
   min-width: 180px;
+  width: max-content;
   z-index: 10;
 }
 
 .dropdown-custom:hover .dropdown-menu-custom {
   display: block;
   list-style: none;
+
   background-color:  #f9c54c;
 }
 
 .dropdown-menu-custom li a {
+  font-weight: 500;
   text-align: start;
   list-style: none;
   display: block;
@@ -95,7 +99,8 @@
 }
 
 .dropdown-menu-custom li a:hover {
-  background-color:  #C02940;
+  transition: all 0.3s ease;
+  transform: scale(1.05);
 }
 
 /* Mobile Menu */

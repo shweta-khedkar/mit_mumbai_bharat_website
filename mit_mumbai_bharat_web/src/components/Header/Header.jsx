@@ -107,9 +107,20 @@ const Header = () => {
                 </span>
                 {aboutOpen && (
                   <ul className="list-unstyled mt-2">
-                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Vision & Mission</a></li>
-                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Our Legacy</a></li>
-                    <li><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>Leadership</a></li>
+                    {['About MIT',
+'History & Legacy',
+'Founder',
+'Executive President',
+'Executive Director',
+'Leadership and Governance',
+'Ranking & Accreditation',
+'Social Initiatives',
+'National Ragging Prevention Programme',
+'Administrative Offices'].map((item,index)=>(
+<li key={index}><a className="text-white" href="#" onClick={() => setMenuOpen(false)}>{item}</a></li>
+                   
+))}
+                   
                   </ul>
                 )}
               </li>

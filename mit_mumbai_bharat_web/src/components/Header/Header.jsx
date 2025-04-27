@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/mit-wpu-logo.png";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,17 +34,16 @@ const Header = () => {
             <nav>
               <ul className="nav justify-content-center mb-1">
                 <li className="nav-item">
-                  <a className="nav-link fw-bold nav-link-custom" href="#">
+                  <Link className="nav-link fw-bold nav-link-custom" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
 
                 {/* About Us with Dropdown */}
-
                 <li className="nav-item dropdown-custom">
-                  <a className="nav-link fw-bold nav-link-custom" href="#">
+                  <Link className="nav-link fw-bold nav-link-custom" to="#">
                     About Us
-                  </a>
+                  </Link>
 
                   <ul className="dropdown-menu-custom">
                     {[
@@ -56,10 +56,18 @@ const Header = () => {
                       "Ranking & Accreditation",
                       "Social Initiatives",
                       "National Ragging Prevention Programme",
-                      "Administrative Offices",
+                      "Administrative Offices",
                     ].map((item, index) => (
                       <li key={index}>
-                        <a href="#">{item}</a>
+                        <Link
+                          className="dropdown-item"
+                          to={`/about/${item
+                            .toLowerCase()
+                            .replace(/ & /g, "-")
+                            .replace(/ /g, "-")}`}
+                        >
+                          {item}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -71,35 +79,32 @@ const Header = () => {
                   "Faculty",
                   "Careers",
                   "Life @MIT Mumbai",
-                  "News & Events",
                 ].map((item, index) => (
                   <li className="nav-item" key={index}>
-                    <a className="nav-link fw-bold nav-link-custom" href="#">
+                    <Link
+                      className="nav-link fw-bold nav-link-custom"
+                      to={`/${item
+                        .toLowerCase()
+                        .replace(/ & /g, "-")
+                        .replace(/ /g, "-")}`}
+                    >
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
-              {/* <hr className="border-light my-1" />
-              <ul className="nav justify-content-center mt-1">
-                {[ 'Faculty', 'Careers', 'Life @MIT Mumbai', 'News & Events'].map((item, index) => (
-                  <li className="nav-item" key={index}>
-                    <a className="nav-link fw-bold nav-link-custom" href="#">{item}</a>
-                  </li>
-                ))}
-              </ul> */}
             </nav>
           </div>
 
           {/* Right: Hamburger */}
           <div className="d-flex align-items-center">
             <div className="d-none d-md-block">
-              <a
-                href="#"
+              <Link
+                to="/apply-now" // Assuming there's a separate page for "Apply Now"
                 className="btn btn-warning fw-bold px-4 py-2 apply-now-button"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
 
             <button className="hamburger d-md-none ms-3" onClick={toggleMenu}>
@@ -115,13 +120,13 @@ const Header = () => {
           <div className="mobile-menu mt-3 d-md-none text-center">
             <ul className="list-unstyled">
               <li className="my-2">
-                <a
+                <Link
                   className="fw-bold text-white"
-                  href="#"
+                  to="/"
                   onClick={() => setMenuOpen(false)}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               {/* About Us in mobile */}
               <li className="my-2">
@@ -144,16 +149,19 @@ const Header = () => {
                       "Ranking & Accreditation",
                       "Social Initiatives",
                       "National Ragging Prevention Programme",
-                      "Administrative Offices",
+                      "Administrative Offices",
                     ].map((item, index) => (
                       <li key={index}>
-                        <a
+                        <Link
                           className="text-white"
-                          href="#"
+                          to={`/about/${item
+                            .toLowerCase()
+                            .replace(/ & /g, "-")
+                            .replace(/ /g, "-")}`}
                           onClick={() => setMenuOpen(false)}
                         >
                           {item}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -167,23 +175,26 @@ const Header = () => {
                 "Life @MIT Mumbai",
               ].map((item, index) => (
                 <li key={index} className="my-2">
-                  <a
+                  <Link
                     className="fw-bold text-white"
-                    href="#"
+                    to={`/${item
+                      .toLowerCase()
+                      .replace(/ & /g, "-")
+                      .replace(/ /g, "-")}`}
                     onClick={() => setMenuOpen(false)}
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="mt-3">
-              <a
-                href="#"
+              <Link
+                to="/apply-now"
                 className="btn btn-warning fw-bold px-4 py-2 apply-now-button"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
           </div>
         )}

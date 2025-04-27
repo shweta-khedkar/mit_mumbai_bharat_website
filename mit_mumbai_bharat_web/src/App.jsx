@@ -1,26 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './pages/Home/Home'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import Programmes from './pages/programmes/Programmes'
-import Courses from './pages/courses/Courses'
+import { useState } from "react";
+import "./App.css";
+import Home from "./pages/Home/Home";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Programmes from "./pages/Programmes/Programmes";
+import Courses from "./pages/Courses/Courses";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <Header/>
-      <Home/>
-      <Programmes/>
-      <Courses/>
-      <Footer/>
-      
-    </>
-  )
+    <Router>
+      {/* Header should be outside Routes for it to show on all pages */}
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/programs" element={<Courses />} />
+
+        {/* Add other routes here */}
+      </Routes>
+
+      {/* Footer should also be outside Routes for it to show on all pages */}
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;

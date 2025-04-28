@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Courses from "./pages/courses/Courses.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Admissions from "./pages/Admissions.jsx";
+import About from "./pages/about us/About.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/programs" element={<Courses />} />
         <Route path="/admissions" element={<Admissions />} />
+        <Route path="about/about-mit" element={<About />} />
         {/* Add other routes here */}
       </Routes>
 

@@ -21,14 +21,15 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between">
           {/* Left: Logo */}
           <div className="d-flex align-items-center">
-            <img
-              src={logo}
-              alt="College Logo"
-              className="logo-custom"
-              style={{ height: "120px", width: "auto" }}
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                alt="College Logo"
+                className="logo-custom"
+                style={{ height: "120px", width: "auto", cursor: "pointer" }}
+              />
+            </Link>
           </div>
-
           {/* Center: Navigation (desktop only) */}
           <div className="flex-grow-1 mx-4 d-none d-md-block text-center">
             <nav>

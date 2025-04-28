@@ -1,0 +1,51 @@
+.history-legacy-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: "Poppins", sans-serif;
+    color: #2b2b2b;
+  }
+  
+  .history-legacy-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .history-legacy-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #032539;
+  }
+  
+  .history-legacy-content {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: 600
+  }
+  
+  .history-legacy-section {
+    margin-top: 40px;
+  }
+  
+  .history-legacy-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #032539;
+    margin-bottom: 20px;
+  }
+  
+  .history-legacy-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 600;
+  }
+  
+  .history-legacy-image {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  

@@ -20,7 +20,9 @@ const About = () => {
         </video>
         <div className="overlay">
           <h1>About MAEER'S MIT Mumbai</h1>
-          <p>Carrying forward the 40-year legacy of excellence in education</p>
+          <p>
+            Carrying forward the 40-year legacy of excellence in education...
+          </p>
         </div>
       </section>
 

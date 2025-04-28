@@ -7,6 +7,7 @@ import Courses from "./pages/courses/Courses.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Admissions from "./pages/Admissions.jsx";
 import About from "./pages/about us/About.jsx";
+import Historyandlegacy from "./pages/about us/Historyandlegacy.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/programs" element={<Courses />} />
         <Route path="/admissions" element={<Admissions />} />
         <Route path="about/about-mit" element={<About />} />
+        <Route path="about/history-legacy" element={<Historyandlegacy />} />
         {/* Add other routes here */}
       </Routes>
 

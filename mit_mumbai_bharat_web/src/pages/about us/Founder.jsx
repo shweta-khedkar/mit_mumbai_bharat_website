@@ -44,9 +44,9 @@ const Founder = () => {
               Founder & Chief Patron - MAEER's MIT Group of Institutions
             </h5>
             <p>
-              At MIT-WPU, we groom generations who will be the architects of
+              At MIT, we groom generations who will be the architects of
               tomorrow, drivers of positive global change and ambassadors of
-              world peace. Over the past 4 decades, students of MIT-WPU have
+              world peace. Over the past 4 decades, students of MIT have
               created their footprints of excellence all over the world that
               inspire the spirit of transformation, change, and perseverance.
             </p>
@@ -55,10 +55,7 @@ const Founder = () => {
               joining the caravan and marching ahead as they accomplish their
               goals and realize their dreams.
             </p>
-            <p className="fw-bold mt-4 text-success">
-              “Union of Science and Religion/Spirituality alone will bring Peace
-              and Harmony to the entire Humanity.”
-            </p>
+            
           </div>
         </div>
       </section>

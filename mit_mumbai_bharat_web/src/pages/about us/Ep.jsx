@@ -69,11 +69,14 @@ const Ep = () => {
         <div className="container">
           <h2 className="mb-4">A Visionary Leader</h2>
           <p className="lead mb-0">
-            Rahul Karad is a passionate educationist and youth leader recognized
-            for his vision of value-based education and youth empowerment.
-            Through peace initiatives and leadership programs, he aims to shape
-            global citizens who contribute towards national and international
-            harmony.
+            Dr. Rahul Vishwanath Karad serves as the Managing Trustee &
+            Executive President of MAEER’S MIT Group of Institutions, which
+            encompasses 70+ institutes and nurtures over 80,000 students. An
+            engineering graduate, a postgraduate in management from Cardiff
+            University, UK, and an alumnus of Harvard Business School, USA, Shri
+            Rahul Karad is dedicated to nation-building through youth
+            empowerment. His vision is to help young minds realise their full
+            potential through holistic, value-based education.
           </p>
         </div>
       </section>

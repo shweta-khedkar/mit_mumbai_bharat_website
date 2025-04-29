@@ -46,16 +46,37 @@ const Founder = () => {
             <p>
               At MIT, we groom generations who will be the architects of
               tomorrow, drivers of positive global change and ambassadors of
-              world peace. Over the past 4 decades, students of MIT have
-              created their footprints of excellence all over the world that
-              inspire the spirit of transformation, change, and perseverance.
+              world peace. Over the past 4 decades, students of MIT have created
+              their footprints of excellence all over the world that inspire the
+              spirit of transformation, change, and perseverance.
             </p>
             <p>
               Our walk is long, and the journey a continuous one, with students
               joining the caravan and marching ahead as they accomplish their
               goals and realize their dreams.
             </p>
-            
+            <p>
+              At MIT-WPU, we groom generations who will be the architects of
+              tomorrow, drivers of positive global change and ambassadors of
+              world peace. Over the past 4 decades, students of MIT-WPU have
+              created their footprints of excellence all over the world that
+              inspire the spirit of transformation, change, and perseverance.
+              Here, we encourage our students to curate their own stories, carve
+              their own trajectories, and build their own paths. The success of
+              our students guides our methodologies and builds bonds with them
+              that are everlasting. The MIT-WPU academia is coherent with what
+              Swami Vivekanand once said and I quote, “Union of Science and
+              Religion/ Spirituality alone will bring Peace and Harmony to the
+              entire Humanity". With a world class contingent of academicians,
+              scientists, engineers, and technologists here to guide our
+              students through a plethora of academic programs segmented across
+              150+ academic disciplines, our students are in for one of the most
+              enriching curricular experiences that also empower them to be
+              physically strong, mentally alert, intellectually sharp, and
+              spiritually elevated. Our walk is long, and the journey a
+              continuous one, with students joining the caravan and marching
+              ahead as they accomplish their goals and realize their dreams.
+            </p>
           </div>
         </div>
       </section>

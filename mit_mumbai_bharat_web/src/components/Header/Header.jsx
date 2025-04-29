@@ -52,7 +52,6 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                     
                     ].map((item, index) => (
                       <li key={index}>
                         <Link
@@ -140,7 +139,6 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                     
                     ].map((item, index) => (
                       <li key={index}>
                         <Link

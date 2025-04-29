@@ -75,16 +75,6 @@ const Footer = () => {
               <div className="col-6">
                 <ul className="list-unstyled">
                   <li>
-                    <a href="#faculty" className="footer-link">
-                      Faculty
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#careers" className="footer-link">
-                      Careers
-                    </a>
-                  </li>
-                  <li>
                     <a href="#life" className="footer-link">
                       Life @MIT Mumbai
                     </a>

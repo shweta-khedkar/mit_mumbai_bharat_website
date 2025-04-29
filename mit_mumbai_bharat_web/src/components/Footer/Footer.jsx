@@ -54,12 +54,6 @@ const Footer = () => {
                           "History & Legacy",
                           "Founder",
                           "Executive President",
-                          "Executive Director",
-                          "Leadership and Governance",
-                          "Ranking & Accreditation",
-                          "Social Initiatives",
-                          "National Ragging Prevention Programme",
-                          "Administrative Offices",
                         ].map((item, index) => (
                           <li key={index}>
                             <a href="#" className="footer-link">
@@ -80,16 +74,6 @@ const Footer = () => {
               </div>
               <div className="col-6">
                 <ul className="list-unstyled">
-                  <li>
-                    <a href="#faculty" className="footer-link">
-                      Faculty
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#careers" className="footer-link">
-                      Careers
-                    </a>
-                  </li>
                   <li>
                     <a href="#life" className="footer-link">
                       Life @MIT Mumbai

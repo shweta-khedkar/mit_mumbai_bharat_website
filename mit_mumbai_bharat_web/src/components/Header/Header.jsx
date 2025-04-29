@@ -52,7 +52,6 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                     
                     ].map((item, index) => (
                       <li key={index}>
                         <Link
@@ -69,13 +68,7 @@ const Header = () => {
                   </ul>
                 </li>
 
-                {[
-                  "Admissions",
-                  "Programs",
-                  "Faculty",
-                  "Careers",
-                  "Life @MIT Mumbai",
-                ].map((item, index) => (
+                {["Programs", "Life @MIT Mumbai"].map((item, index) => (
                   <li className="nav-item" key={index}>
                     <Link
                       className="nav-link fw-bold nav-link-custom"
@@ -140,7 +133,6 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                     
                     ].map((item, index) => (
                       <li key={index}>
                         <Link
@@ -158,13 +150,7 @@ const Header = () => {
                   </ul>
                 )}
               </li>
-              {[
-                "Admissions",
-                "Programs",
-                "Faculty",
-                "Careers",
-                "Life @MIT Mumbai",
-              ].map((item, index) => (
+              {["Programs", "Life @MIT Mumbai"].map((item, index) => (
                 <li key={index} className="my-2">
                   <Link
                     className="fw-bold text-white"

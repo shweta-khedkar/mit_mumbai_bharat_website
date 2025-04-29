@@ -1,10 +1,11 @@
 .about-page {
     font-family: 'Arial', sans-serif;
+
   }
   
   .hero-section {
     position: relative;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
   }
   
@@ -24,7 +25,7 @@
     background: rgba(0, 0, 0, 0.5);
     padding: 50px;
     text-align: center;
-    color: #fff;
+    color: #fafafa;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -40,6 +41,33 @@
   .hero-section p {
     font-size: 1.4rem;
     margin-bottom: 30px;
+  }
+  .shine-effect {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shine-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.2), rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
   }
   
   /* Scroll Arrow Button */
@@ -105,7 +133,7 @@
   .highlights-section h2,
   .values-section h2 {
     text-align: center;
-    margin-bottom: 20px;
+    
   }
   
   .intro-section p {
@@ -178,6 +206,96 @@
     .highlights-section .highlights,
     .values-section .row {
       flex-direction: column;
+    }
+  }
+  .leadership-section, .why-choose-us {
+    max-width: 900px;
+    text-align: center;
+  }
+  
+  .leadership-section h2, .why-choose-us h2 {
+    font-size: 2rem;
+  }
+  
+  .why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .why-choose-us ul li {
+ 
+    font-size: 1.1rem;
+  }
+  .highlights {
+    padding: 3rem 0;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .highlights h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .highlight-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .highlight-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight-card p {
+    font-size: 1.125rem;
+    color: #f8f8f8;
+  }
+  
+  /* Shiny Gradient Backgrounds */
+  .card-1 {
+    background: linear-gradient(to right, #3b82f6, #1d4ed8);
+  }
+  
+  .card-2 {
+    background: linear-gradient(to right, #10b981, #047857);
+  }
+  
+  .card-3 {
+    background: linear-gradient(to right, #8b5cf6, #6b21a8);
+  }
+  
+  .card-4 {
+    background: linear-gradient(to right, #ef4444, #b91c1c);
+  }
+  
+  .highlight-card:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .highlights-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .highlights-grid {
+      grid-template-columns: 1fr;
     }
   }
   

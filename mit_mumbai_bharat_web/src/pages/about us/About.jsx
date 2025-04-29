@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import missionImg from "../../assets/et.jpg";
 import visionImg from "../../assets/et.jpg";
 import valuesImg from "../../assets/et.jpg";
 import heroVideo from "../../assets/mit_video_landingpage.mp4";
-import { FaChevronDown } from "react-icons/fa";
 import "./about_us.css";
+import Counter from "./Counter";
+
 const About = () => {
-  const scrollToContent = () => {
-    const contentSection = document.getElementById("about-content");
-    contentSection.scrollIntoView({ behavior: "smooth" });
-  };
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <div className="about-page">
       {/* Hero Section */}
@@ -18,7 +21,7 @@ const About = () => {
           <source src={heroVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="overlay">
+        <div className="overlay" data-aos="fade-up">
           <h1>About MAEER'S MIT Mumbai</h1>
           <p>
             Carrying forward the 40-year legacy of excellence in education...
@@ -27,7 +30,7 @@ const About = () => {
       </section>
 
       {/* Introduction */}
-      <section className="intro-section container">
+      <section className="intro-section container" data-aos="fade-up">
         <h2>Who We Are</h2>
         <p>
           MAEER’s MIT Mumbai is a new-age engineering institute rooted in the
@@ -39,9 +42,9 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="mission-vision container">
+      <section className="mission-vision container" data-aos="zoom-in-up">
         <div className="row">
-          <div className="col">
+          <div className="col" data-aos="fade-right">
             <img src={missionImg} alt="Mission" />
             <h3>Our Mission</h3>
             <p>
@@ -49,7 +52,7 @@ const About = () => {
               competent professionals ready to face global challenges.
             </p>
           </div>
-          <div className="col">
+          <div className="col" data-aos="fade-left">
             <img src={visionImg} alt="Vision" />
             <h3>Our Vision</h3>
             <p>
@@ -61,40 +64,54 @@ const About = () => {
       </section>
 
       {/* Highlights */}
-      <section className="highlights-section container">
-        <h2>MIT Legacy at a Glance</h2>
-        <div className="highlights">
-          <div>
-            <h3>40+</h3>
-            <p>Years of Academic Excellence</p>
+      <section className="text-center py-12 highlights" data-aos="fade-up">
+        <h2 className="text-3xl font-bold mb-10">MIT Legacy at a Glance</h2>
+        <div className="highlights-grid">
+          {/* Card 1 */}
+          <div className="highlight-card card-1">
+            <h3 className="text-4xl font-extrabold text-white mb-2">
+              <Counter target={40} />+
+            </h3>
+            <p className="text-gray-100">Years of Academic Excellence</p>
           </div>
-          <div>
-            <h3>100,000+</h3>
-            <p>Global Alumni Network</p>
+
+          {/* Card 2 */}
+          <div className="highlight-card card-2">
+            <h3 className="text-4xl font-extrabold text-white mb-2">
+              <Counter target={100000} />+
+            </h3>
+            <p className="text-gray-100">Global Alumni Network</p>
           </div>
-          <div>
-            <h3>50+</h3>
-            <p>National & International Collaborations</p>
+
+          {/* Card 3 */}
+          <div className="highlight-card card-3">
+            <h3 className="text-4xl font-extrabold text-white mb-2">
+              <Counter target={15} />+
+            </h3>
+            <p className="text-gray-100">
+              National & International Collaborations
+            </p>
           </div>
-          <div>
-            <h3>AICTE</h3>
-            <p>Approved Programs</p>
+
+          {/* Card 4 */}
+          <div className="highlight-card card-4">
+            <h3 className="text-4xl font-extrabold text-white mb-2">AICTE</h3>
+            <p className="text-gray-100">Approved Programs</p>
           </div>
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="values-section container">
-        <h2>Our Core Values</h2>
-        <div className="row">
-          <div className="col">
-            <img src={valuesImg} alt="Values" />
-            <p>
-              At MAEER’s MIT Mumbai, we uphold values of academic integrity,
-              inclusivity, research-driven learning, and community service.
-            </p>
-          </div>
-        </div>
+      {/* Why Choose Us */}
+      <section className="why-choose-us container" data-aos="fade-up">
+        <h2>Why Choose MAEER's MIT Mumbai?</h2>
+        <ul>
+          <li>
+            State-of-the-art campus with modern laboratories and workshops.
+          </li>
+          <li>Experienced faculty with global exposure.</li>
+          <li>Industry-oriented curriculum & research opportunities.</li>
+          <li>Vibrant student clubs and annual tech & cultural fests.</li>
+        </ul>
       </section>
     </div>
   );

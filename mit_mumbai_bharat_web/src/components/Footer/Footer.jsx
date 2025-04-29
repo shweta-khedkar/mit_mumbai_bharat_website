@@ -129,7 +129,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/mit-engineering-mumbai/about/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-link fs-4 hover-effect"

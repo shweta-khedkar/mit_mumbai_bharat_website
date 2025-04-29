@@ -13,7 +13,6 @@ import Ep from "./pages/about us/Ep.jsx";
 import Applynow from "./pages/apply now/Applynow.jsx";
 import LifeAtMITMumbai from "./pages/life-mitmumbai/Life-mitmumbai";
 
-
 function App() {
   return (
     <Router>
@@ -28,7 +27,7 @@ function App() {
         <Route path="about/history-legacy" element={<Historyandlegacy />} />
         <Route path="about/founder" element={<Founder />} />
         <Route path="about/executive-president" element={<Ep />} />
-        <Route path="/life-mit-mumbai" element={<LifeAtMITMumbai />} />
+        <Route path="/life-@mit-mumbai" element={<LifeAtMITMumbai />} />
         <Route path="apply-now" element={<Applynow />} />
         {/* Add other routes here */}
       </Routes>

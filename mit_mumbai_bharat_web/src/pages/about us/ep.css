@@ -1,0 +1,44 @@
+.executive-president-page h1,
+.executive-president-page h2 {
+  font-weight: 700;
+}
+
+.executive-president-page p {
+  font-size: 1.07rem;
+  line-height: 1.7;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #283e51, #485563);
+}
+
+.gradient-section {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.img-fluid {
+  border-radius: 1rem;
+}
+
+.ratio iframe {
+  border: none;
+}
+
+/* Mobile tweaks */
+@media (max-width: 767.98px) {
+  .executive-president-page h1 {
+    font-size: 2rem;
+  }
+
+  .executive-president-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .executive-president-page p {
+    font-size: 1rem;
+  }
+}

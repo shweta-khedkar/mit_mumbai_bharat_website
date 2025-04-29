@@ -52,12 +52,12 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                      "Executive Director",
+                     /* "Executive Director",
                       "Leadership and Governance",
                       "Ranking & Accreditation",
                       "Social Initiatives",
                       "National Ragging Prevention Programme",
-                      "Administrative Offices",
+                      "Administrative Offices",*/
                     ].map((item, index) => (
                       <li key={index}>
                         <Link
@@ -145,12 +145,13 @@ const Header = () => {
                       "History & Legacy",
                       "Founder",
                       "Executive President",
-                      "Executive Director",
+                     /* "Executive Director",
                       "Leadership and Governance",
                       "Ranking & Accreditation",
                       "Social Initiatives",
                       "National Ragging Prevention Programme",
                       "Administrative Offices",
+                      */
                     ].map((item, index) => (
                       <li key={index}>
                         <Link

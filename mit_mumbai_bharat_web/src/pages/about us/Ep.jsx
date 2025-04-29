@@ -36,18 +36,18 @@ const Ep = () => {
             />
           </div>
           <div className="col-lg-7" data-aos="fade-left">
-            <h2 className="mb-3 text-primary">Mr. Rahul V. Karad</h2>
+            <h2 className="mb-3 text-primary">Dr. Rahul V. Karad</h2>
             <h5 className="text-secondary mb-4">
               Executive President - MIT-WPU & Managing Trustee - MAEER's MIT
             </h5>
-            <p>
+            <p className="justified-text">
               At MIT-WPU, our unwavering commitment extends beyond academic
               excellence. Our educational philosophy nurtures leadership,
               character, and innovation while emphasizing humanitarian values.
               Education must create leaders who are morally grounded, socially
               responsible, and globally competent.
             </p>
-            <p>
+            <p className="justified-text">
               Our students are prepared not just for jobs but for meaningful
               careers and service to society. With a future-driven curriculum
               and emphasis on peace studies, MIT-WPU is shaping the nation’s

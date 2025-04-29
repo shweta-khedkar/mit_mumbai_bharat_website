@@ -7,6 +7,9 @@
   font-size: 1.07rem;
   line-height: 1.7;
 }
+.justified-text {
+  text-align: justify;
+}
 
 .hero-bg {
   background: linear-gradient(135deg, #283e51, #485563);

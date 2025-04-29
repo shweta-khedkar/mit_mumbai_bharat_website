@@ -1,0 +1,46 @@
+.founder-page h1,
+.founder-page h2 {
+  font-weight: 700;
+}
+
+.founder-page p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.peace-gradient {
+  background: linear-gradient(135deg, #d0880d, #efe164);
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.img-fluid {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.ratio iframe {
+  border: none;
+}
+
+/* Extra responsiveness tweaks */
+@media (max-width: 767.98px) {
+  .founder-page h1 {
+    font-size: 2rem;
+  }
+
+  .founder-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .founder-page p {
+    font-size: 1rem;
+  }
+}

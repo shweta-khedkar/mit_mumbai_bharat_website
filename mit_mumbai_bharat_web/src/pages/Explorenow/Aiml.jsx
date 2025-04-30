@@ -15,7 +15,7 @@ const Aiml = () => {
   const programmeInfo = {
     aiml: {
       title:
-        "Computer Science & Engineering (Artificial Intelligence /Machine Learning) ",
+        "Computer Science & Engineering (Artificial Intelligence / Machine Learning) ",
       description: `
 **Learn AI, Machine Learning, Deep Learning, and automation techniques with real-time applications in industries.**
       `,
@@ -32,22 +32,22 @@ const Aiml = () => {
 **Electronics Engineering** is a core branch of engineering that focuses on the design, development, and testing of electronic circuits, devices, and systems.
 
 **Objectives:**  
-1. **Core Technical Knowledge**  
+**1. Core Technical Knowledge**  
 Develop a strong foundation in mathematics, physics, and the principles of electronic circuits, systems, and devices. Understand the theory and application of semiconductors, analog and digital electronics, embedded systems, and signal processing.
 
-2. **Design and Problem Solving**  
+**2. Design and Problem Solving**  
 Apply engineering principles to design and analyze electronic systems and components. Develop problem-solving skills to address real-world engineering challenges using modern tools and techniques.
 
-3. **Hands-on Skills and Laboratory Experience**  
+**3. Hands-on Skills and Laboratory Experience**  
 Gain practical experience through laboratory work and projects involving circuit design, microcontrollers, communication systems, and VLSI. Learn to use electronic design automation (EDA) tools, testing equipment, and simulation software.
 
-4. **Communication and Teamwork**  
+**4. Communication and Teamwork**  
 Communicate technical information effectively through written reports, presentations, and collaborative projects. Work efficiently in teams, understanding the importance of interdisciplinary collaboration.
 
-5. **Ethics and Lifelong Learning**  
+**5. Ethics and Lifelong Learning**  
 Understand professional and ethical responsibilities in engineering practice. Appreciate the importance of continuous learning to adapt to evolving technologies and industry needs.
 
-6. **Innovation and Research**  
+**6. Innovation and Research**  
 Encourage creativity and innovation in electronics design and development. Develop research skills and engage with emerging areas such as IoT, robotics, and artificial intelligence.
 
 **Electronics in the Modern Era**  

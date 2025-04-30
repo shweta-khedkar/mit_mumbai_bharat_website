@@ -36,7 +36,7 @@ const Ed = () => {
             />
           </div>
           <div className="col-lg-7" data-aos="fade-left">
-            <h2 className="mb-3 text-primary">Mrs.Jyoti Karad Dhakne</h2>
+            <h2 className="mb-3 text-primary">Mrs. Jyoti Karad Dhakne</h2>
             <h5 className="text-secondary mb-4">
               Executive Director - MIT-MUMBAI
             </h5>

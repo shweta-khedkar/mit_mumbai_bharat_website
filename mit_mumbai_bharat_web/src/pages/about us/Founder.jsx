@@ -43,19 +43,19 @@ const Founder = () => {
             <h5 className="text-secondary mb-4">
               Founder & Chief Patron - MAEER's MIT Group of Institutions
             </h5>
-            <p>
+            <p className="justified-text">
               At MIT, we groom generations who will be the architects of
               tomorrow, drivers of positive global change and ambassadors of
               world peace. Over the past 4 decades, students of MIT have created
               their footprints of excellence all over the world that inspire the
               spirit of transformation, change, and perseverance.
             </p>
-            <p>
+            <p className="justified-text">
               Our walk is long, and the journey a continuous one, with students
               joining the caravan and marching ahead as they accomplish their
               goals and realize their dreams.
             </p>
-            <p>
+            <p className="justified-text">
               At MIT-WPU, we groom generations who will be the architects of
               tomorrow, drivers of positive global change and ambassadors of
               world peace. Over the past 4 decades, students of MIT-WPU have

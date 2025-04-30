@@ -1,8 +1,32 @@
-import React from "react";
+import React , { useRef } from "react";
 import "./applynow.css"; // Adjust the path if needed
+import emailjs from "emailjs-com";
 import indexbg from "../../assets/indexbg.jpg";
 
 const Applynow = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm(
+          "service_f9m3lwq", // 🔁 Replace with your EmailJS Service ID
+          "template_896vyg6", // 🔁 Replace with your EmailJS Template ID
+          form.current,
+          "tTYTcXGIhVuzVeOkp" // 🔁 Replace with your EmailJS Public Key
+        )
+        .then(
+          (result) => {
+            alert("✅ Enquiry submitted successfully!");
+            form.current.reset();
+          },
+          (error) => {
+            alert("❌ Something went wrong. Please try again.");
+            console.log(error.text);
+          }
+        );
+  }
   return (
     <>
       <div className="container">
@@ -14,7 +38,7 @@ const Applynow = () => {
               Fill out the form below to apply for our programs.
             </p>
 
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="mb-3">
                 <label htmlFor="fullName" className="form-label">
                   Full Name

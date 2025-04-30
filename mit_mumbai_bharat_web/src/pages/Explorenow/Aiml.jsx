@@ -50,38 +50,26 @@ Electronics engineers are in high demand across multiple industries: telecom, co
 Many electronics graduates secure placements in top companies such as Intel, Qualcomm, ISRO, DRDO, TCS, Infosys, and startups working on next-gen technologies. This branch have capability to fight against the job displacment due to AI. There are innumerous number of small, medium and large scale Industries wherein Electronics Engineer have capability to play role. 
 
 Interdisciplinary: 
-
 The branch integrates with computer science, robotics, AI, IoT, and data science—opening doors to a wide range of specializations and research opportunities. Students can also make their career in mechatronics, Industrial automation & Robotics. 
 
 Scope to Entrepreneurship: 
-
 With skills in embedded systems, hardware design, and automation, students can innovate, develop their own products, or launch tech startups. There is tremendous scope to Electonics Engineer to start their start ups in the field of drone technology, IoT, Healthcare Instruments and Service to Smart cities. 
 
-
-	Future belongs to Electronics: 
+Future belongs to Electronics: 
 From 5G to smart cities to electric vehicles, electronics engineers are key drivers of technological advancement—making this a future-proof career choice. Hardware for AI, autonomous vehicles, user friendly robots and Autonomous systems, Electronics Engineer will dominate the market. 
-
 
 Key Areas of Study:
 
 1. Analog and Digital Electronics
-
 2. Microprocessors and Microcontrollers
-
 3. Embedded Systems
-
 4. Communication Systems (Wireless, Optical, Satellite)
-
 5. VLSI (Very Large Scale Integration) Design
-
 6. Signal Processing
-
 7. Control Systems and Instrumentation 
-
 8. Computer Architecture and Organization 
 
 Department’s Efforts to Build Strong Electronics Engineers
-
 At the Department of Electronics Engineering, we are committed to nurturing well-rounded, technically competent, and industry-ready graduates. Our efforts are focused on both academic excellence and practical exposure through the following initiatives:
 
 Industry-Aligned teaching
@@ -100,11 +88,9 @@ Skill Development Programs
 We conduct technical training sessions, certification courses (like MATLAB, Arduino, PCB Design, VLSI etc.), coding bootcamps, and soft-skill workshops to enhance both technical and professional skills.
 
 Research & Innovation Culture
-
 Students are encouraged to participate in research projects, publish papers, and take part in national-level competitions, fostering a spirit of innovation and problem-solving.
 
 Placement Support & Career Guidance
-
 Dedicated placement cell and industry tie-ups ensure strong placement opportunities. Career counseling and mock interview sessions help students prepare for success.
       `,
     },

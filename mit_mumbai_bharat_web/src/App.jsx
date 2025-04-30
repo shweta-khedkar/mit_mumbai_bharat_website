@@ -13,7 +13,7 @@ import Ep from "./pages/about us/Ep.jsx";
 import Applynow from "./pages/apply now/Applynow.jsx";
 import LifeAtMITMumbai from "./pages/life-mitmumbai/Life-mitmumbai";
 import Ed from "./pages/about us/Ed";
-
+import Aiml from "./pages/Explorenow/Aiml.jsx";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
         <Route path="about/executive-director" element={<Ed />} />
         <Route path="/life-@mit-mumbai" element={<LifeAtMITMumbai />} />
         <Route path="apply-now" element={<Applynow />} />
+        <Route path="/programme/:name" element={<Aiml />} />
         {/* Add other routes here */}
       </Routes>
 

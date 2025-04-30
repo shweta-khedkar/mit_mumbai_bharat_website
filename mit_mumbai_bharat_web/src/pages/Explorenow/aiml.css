@@ -1,0 +1,13 @@
+.programme-description {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.05rem;
+  }
+  
+  .programme-description strong {
+    display: block;
+    margin-top: 1.4rem;
+    font-size: 1.2rem;
+    color: #0d3b66;
+  }
+  

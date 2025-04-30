@@ -4,10 +4,49 @@
     font-size: 1.05rem;
   }
   
-  .programme-description strong {
-    display: block;
-    margin-top: 1.4rem;
-    font-size: 1.2rem;
-    color: #0d3b66;
+  
+  .programme-details{
+    text-align: justify;
+  }
+  .programme-details strong {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #003366;
+  }
+  .programme-card {
+    background: linear-gradient(135deg, #003366, #006699, #00aaff);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 2rem 0;
+  }
+  
+  .programme-details h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffdd00;
+  }
+  
+  .programme-details strong {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ffdd00;
+  }
+  
+  .btn-explore {
+    margin-top: 2rem;
+    background: #ffdd00;
+    color: #003366;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn-explore:hover {
+    background: #ffc107;
+    color: #003366;
   }
   

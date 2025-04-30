@@ -40,14 +40,14 @@ const Applynow = () => {
 
             <form ref={form} onSubmit={sendEmail}>
               <div className="mb-3">
-                <label htmlFor="fullName" className="form-label">
+                <label htmlFor="name" className="form-label">
                   Full Name
                 </label>
                 <input
                   type="text"
                   className="form-control"
-                  id="fullName"
-                  name="fullName"
+                  id="name"
+                  name="name"
                   required
                 />
               </div>

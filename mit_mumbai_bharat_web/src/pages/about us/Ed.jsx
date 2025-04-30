@@ -41,31 +41,39 @@ const Ed = () => {
               Executive Director - MIT-MUMBAI
             </h5>
             <p className="justified-text">
-            India as a nation is on the Fastrack to becoming a global superpower. 
-            This dream shared by a billion people is only feasible due to the recent surge 
-            in excellent educational institutes throughout the country. Institutes like MAEERs 
-            [MIT] which made it possible to train a workforce of competent engineers, doctors, 
-            managers and more to help the nation grow and find its place on the international stage.
-
+              India as a nation is on the Fastrack to becoming a global
+              superpower. This dream shared by a billion people is only feasible
+              due to the recent surge in excellent educational institutes
+              throughout the country. Institutes like MAEERs [MIT] which made it
+              possible to train a workforce of competent engineers, doctors,
+              managers and more to help the nation grow and find its place on
+              the international stage.
             </p>
             <p className="justified-text">
-            But now we need to take this excellence in education to the children of our nation, so that they may drive India ahead and ensure 
-            her success in the coming decades.This can only succeed if we inculcate the values of tradition with 
-            the requirements of today to create the citizens of tomorrow.
+              But now we need to take this excellence in education to the
+              children of our nation, so that they may drive India ahead and
+              ensure her success in the coming decades.This can only succeed if
+              we inculcate the values of tradition with the requirements of
+              today to create the citizens of tomorrow.
             </p>
             <p className="justified-text">
-            MIT-MUMBAI is the answer to this dilemma that we, as a nation, are facing. Committed to quality 
-            education, but delivered with a mix of traditional and modern approaches to pedagogy so as to maximise the mental, physical 
-            and spiritual growth of the individual.
+              MIT-MUMBAI is the answer to this dilemma that we, as a nation, are
+              facing. Committed to quality education, but delivered with a mix
+              of traditional and modern approaches to pedagogy so as to maximise
+              the mental, physical and spiritual growth of the individual.
             </p>
             <p className="justified-text">
-            At MIT, Mumbai your child is not merely a student, but is a member of our family and will be 
-            treated with the same care and affection with which we look after our own.
+              At MIT, Mumbai your child is not merely a student, but is a member
+              of our family and will be treated with the same care and affection
+              with which we look after our own.
             </p>
             <p className="justified-text">
-            Love and respect, honour and integrity, passion and determination will all be equally imbued to each of our loving students so 
-            that they may shine as bright as they can, and that we can be assured of a beautiful tomorrow for our country, our society and 
-            indeed our own families. This promise shall be upheld by me, by the principal and indeed by the entire staff.
+              Love and respect, honour and integrity, passion and determination
+              will all be equally imbued to each of our loving students so that
+              they may shine as bright as they can, and that we can be assured
+              of a beautiful tomorrow for our country, our society and indeed
+              our own families. This promise shall be upheld by me, by the
+              principal and indeed by the entire staff.
             </p>
           </div>
         </div>

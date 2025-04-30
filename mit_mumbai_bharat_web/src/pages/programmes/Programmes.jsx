@@ -22,7 +22,7 @@ const Programmes = () => {
           <div className="card" data-aos="fade-up">
             <img src={aiml} alt="CSE AI" />
             <div className="card-body">
-              <h5 className="card-title">CSE (Artificial Intelligence)</h5>
+              <h5 className="card-title">Computer Science And Engineering(AI/ML)</h5>
               <p className="card-text">
                 Learn cutting-edge AI, ML, and automation techniques.
               </p>
@@ -35,7 +35,7 @@ const Programmes = () => {
           <div className="card" data-aos="fade-up">
             <img src={compscience} alt="CSE DS" />
             <div className="card-body">
-              <h5 className="card-title">CSE (Data Science)</h5>
+              <h5 className="card-title">Computer Science And Engineering</h5>
               <p className="card-text">
                 Master big data analytics and predictive modeling.
               </p>

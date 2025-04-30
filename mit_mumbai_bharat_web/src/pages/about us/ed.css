@@ -1,0 +1,40 @@
+.executive-director-page h1,
+.executive-director-page h2 {
+  font-weight: 700;
+}
+
+.executive-director-page p {
+  font-size: 1.07rem;
+  line-height: 1.7;
+}
+
+.justified-text {
+  text-align: justify;
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #283e51, #485563);
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+
+.img-fluid {
+  border-radius: 1re;
+  position:relative;
+}
+
+@media (max-width: 767.98px) {
+  .executive-director-page h1 {
+    font-size: 2rem;
+  }
+
+  .executive-director-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .executive-director-page p {
+    font-size: 1rem;
+  }
+}
